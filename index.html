@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>home page</title>
+  
+  <link rel="stylesheet" href="contact us.css">
+
+
+<body>
+  <div class="header">
+    <h2 class="logo">SMART ZONE</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about us.html">ABOUT US</a></li>
+        <li><a href="products.html">PRODUCTS</a></li>
+        <li><a href="contact us.html">CONTACT</a></li>
+        <li><a href="our services.html">OUR SERVICES</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="animated-text"> 
+  
+    <div class="topic">
+      <b>SMART ZONE ONLINE STORE</b>
+        </div>    
+          
+    <div style="text-align: center;">
+      <div class="slideshow_container">
+        <div class="mySlides fade">
+          <img src="sz-images/frontimage.jpg"
+            style="border-radius: 40px; box-shadow: 2px 2px 2px 1px rgb(249, 247, 247);width:90%; height: 80vh; object-fit: cover;">
+        </div>
+        <div class="mySlides fade">
+          <img src="sz-images/IMG-20250225-WA0003.jpg"
+            style=" border-radius: 40px; box-shadow: 2px 2px 2px 1px rgba(249, 247, 247);width:90%; height: 80vh; object-fit:cover;">
+        </div>
+        <div class="mySlides fade">
+          <img src="sz-images/frontimage2.jpg"
+            style=" border-radius: 40px; box-shadow: 2px 2px 2px 1px rgba(249, 247, 247);width:90%; height: 80vh; object-fit: cover;">
+        </div>
+        <br>
+        <br>
+        <div style="text-align:center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) { slideIndex = 1 }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 1500); 
+    }
+  </script>
+
+  <br>
+  <br>
+
+
+  
+    <div class="sz content health-red">
+      <div class="sz_red">
+        <div class="inf_box">
+          <div class="health_content">
+       
+        <div class="center"    >
+    <div style="font-size: 25px;">
+      <section id="about">
+        <a href="about us.html"><h1>ABOUT US</h1></a><br>
+        <p>Welcome to Smart Zone,We speciaalize in high-quality laptops and sapre parts.Since 2014, our mission has been
+          to provide exellent products and outstanding customer service.Whether you're a student or aprofessional,our
+          team is here to help you find the perfect device for your needs.Thank you for choosing us! </p>
+      </section>
+      <br>
+
+      <section id="products">
+        <a href="products.html"><h1> PRODUCT LIST </h1></a><br>
+        <p>Welcome to our product section!Here,you'ii find a wide range of laptops and spare parts tailored to fit your
+          needs.Browes your offering to discover the perfect device or componet for your reqirements.whether your
+          looking for performence,style or value,we have something for everyone! </p>
+      </section>
+      <br>
+
+      <section id="contact">
+        <a href="contact us.html"><h1>CONTACT US </h1></a><br>
+        <p>Contact Numbers,Email Adress,Social Media Links </p>
+      </section>
+      <br>
+
+      <section id="our services">
+        <a href="our services.html"><h1> OUR SERVICES </h1></a><br>
+        <p>At smart zone,we offer wide range of services to keep your laptops running smoothly.weather you're looking
+          for a new laptop,need a repair,or require spare parts,we've got you covered.Our expert team is have to provide
+          quality products and reliable services to meet all your laptop needs</p>
+      </section>
+    </div>
+        </div>
+      
+  </main>
+  <br><br><br><br><br>	
+
+<h3>Social Media links</h3>
+          <div class="social_links">
+            <a href=""><img src="sz-images/fbicon.png" width="50px" height="50px" alt="facebook"></a>
+            <a href=""><img src="sz-images/wpicon.png" width="50px" height="50px" alt="Insta"></a>
+            <a href=""><img src="sz-images/inicon.png" width="50px" height="50px"  alt="whatsapp"></a>
+          </div>
+          </div>
+</div>
+</div>      
+
+</body>
+</head>
+
+</html>
